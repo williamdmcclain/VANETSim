@@ -22,6 +22,10 @@ public class Truck {
 		posX += velocity;
 	}
 	
+	public void setAcceleration(double accelerationIn) {
+		this.acceleration = accelerationIn;
+	}
+	
 	public void formPlatoon() {
 		
 	}
