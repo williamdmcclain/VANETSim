@@ -20,6 +20,18 @@ public class SensorPacket {
 		
 	}
 	
+	public SensorPacket(short srcAddr, short dstAddr, double velocity, 
+			double acceleration, int posX, int posY) {
+		
+		this.srcAddr = srcAddr;
+		this.dstAddr = dstAddr;
+		this.velocity = velocity;
+		this.acceleration = acceleration;
+		this.posX = posX;
+		this.posY = posY;
+		
+	}
+	
 	public int getSeqNumber() {
 		return seqNumber;
 	}

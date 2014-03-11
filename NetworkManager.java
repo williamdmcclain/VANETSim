@@ -5,6 +5,7 @@ public class NetworkManager {
 
 	private DatagramSocket[] connections;
 	
+	// Initialize network by reading in config file and establish connections to nodes
 	public NetworkManager() {
 		
 	}
@@ -16,5 +17,9 @@ public class NetworkManager {
 	
 	public boolean addConnection() {
 		return true;
+	}
+	
+	public void sendPacket(SensorPacket packet) {
+		
 	}
 }

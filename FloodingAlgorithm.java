@@ -3,9 +3,11 @@ public class FloodingAlgorithm {
 	private short addr;
 	private CacheTable cache;
 	private int[] neighbors;
+	private NetworkManager netManager;
 	// 10140 - 10149
 	public FloodingAlgorithm() {
-		
+		cache = new CacheTable();
+		netManager = new NetworkManager();
 	}
 	
 	public boolean isPacketForMe(SensorPacket packetIn) {
@@ -29,7 +31,9 @@ public class FloodingAlgorithm {
 	 * it will not forward back to k.
 	 */
 	private boolean forwardPacket(SensorPacket packet) {
-		
+		for(int i = 0; i < neighbors.length; i++) {
+			
+		}
 		return true;
 	}
 	
@@ -38,6 +42,10 @@ public class FloodingAlgorithm {
 	 * drop rate reaches a threshold.
 	 */
 	public void packetDropRate() {
+		
+	}
+	
+	public void run() {
 		
 	}
 }
